@@ -52,21 +52,6 @@ nav {
 }
 
 
-.theme-btn {
-  background: none;
-  border: 1px solid var(--border-mid);
-  border-radius: 100px;
-  padding: 6px 14px;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.68rem;
-  font-weight: 500;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--text-faint);
-  cursor: pointer;
-  transition: color 0.2s, border-color 0.2s;
-}
-.theme-btn:hover { color: var(--text); border-color: var(--border-mid); }
 
 /* MAIN */
 main {
@@ -214,7 +199,6 @@ main {
 
 <nav>
   <a href="#"><img src="logo.png" alt="Oedipa Agency" style="height:22px;display:block;opacity:0.75;"></a>
-  <button class="theme-btn" id="themeBtn">Light</button>
 </nav>
 
 <main>
@@ -242,17 +226,5 @@ main {
   <a href="mailto:contact@webature.co.uk" class="footer-link">contact@webature.co.uk</a>
 </footer>
 
-<script>
-const btn = document.getElementById('themeBtn');
-const saved = localStorage.getItem('theme');
-if (saved) { document.documentElement.setAttribute('data-theme', saved); btn.textContent = saved === 'light' ? 'Dark' : 'Light'; }
-btn.addEventListener('click', () => {
-  const current = document.documentElement.getAttribute('data-theme');
-  const next = current === 'light' ? 'dark' : 'light';
-  document.documentElement.setAttribute('data-theme', next);
-  localStorage.setItem('theme', next);
-  btn.textContent = next === 'light' ? 'Dark' : 'Light';
-});
-</script>
 </body>
 </html>
