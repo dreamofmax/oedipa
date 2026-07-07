@@ -11,8 +11,8 @@
   "redirects": [
     {
       "source": "/:path*",
-      "has": [{ "type": "host", "value": "www.webature.co.uk" }],
-      "destination": "https://webature.co.uk/:path*",
+      "has": [{ "type": "host", "value": "www.oedipa.agency" }],
+      "destination": "https://oedipa.agency/:path*",
       "permanent": true
     }
   ],
