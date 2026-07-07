@@ -5,7 +5,7 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Admin — Webature</title>
+<title>Admin — Oedipa Agency</title>
 <meta name="robots" content="noindex, nofollow">
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
@@ -126,7 +126,7 @@ body { cursor: auto; }
 <body>
 <div class="login-screen" id="loginScreen">
   <div class="login-box">
-    <div class="login-logo"><img src="webature-logo.png" alt="Webature"></div>
+    <div class="login-logo"><img src="oedipa-logo.png" alt="Oedipa Agency"></div>
     <div class="login-title">Admin Access</div>
     <input type="password" class="login-input" id="passInput" placeholder="Password" onkeydown="if(event.key==='Enter')doLogin()">
     <button class="login-btn" onclick="doLogin()">Sign In</button>
@@ -136,7 +136,7 @@ body { cursor: auto; }
 
 <div class="admin-panel" id="adminPanel">
   <div class="admin-top-bar">
-    <a href="/" class="admin-top-bar-logo"><img src="webature-logo.png" alt="Webature"></a>
+    <a href="/" class="admin-top-bar-logo"><img src="oedipa-logo.png" alt="Oedipa Agency"></a>
     <span class="admin-top-bar-title">Project Manager</span>
     <div class="admin-top-bar-right">
       <button class="theme-toggle" aria-label="Toggle theme" style="position:static;box-shadow:none;width:36px;height:36px"><span class="theme-toggle-icon">🌙</span></button>
@@ -309,8 +309,8 @@ async function testSheets(){
 }
 
 // ── PROJECTS (local fallback + sheets) ──
-function getLocal(){ return JSON.parse(localStorage.getItem('webature_projects')||'[]'); }
-function saveLocal(p){ localStorage.setItem('webature_projects',JSON.stringify(p)); }
+function getLocal(){ return JSON.parse(localStorage.getItem('Oedipa Agency_projects')||'[]'); }
+function saveLocal(p){ localStorage.setItem('Oedipa Agency_projects',JSON.stringify(p)); }
 
 async function fetchFromSheets(){
   const url = getSheetsUrl();
