@@ -4,4 +4,4 @@ Allow: /
 Disallow: /admin
 Disallow: /admin.html
 
-Sitemap: https://webature.co.uk/sitemap.xml
+Sitemap: https://oedipa.agency/sitemap.xml
