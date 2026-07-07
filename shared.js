@@ -36,7 +36,7 @@ updateClock();
 setInterval(updateClock, 10000);
 
 // ── THEME TOGGLE ──
-const THEME_KEY = 'webature_theme';
+const THEME_KEY = 'oedipa_theme';
 function applyTheme(theme) {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem(THEME_KEY, theme);
