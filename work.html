@@ -5,25 +5,25 @@
   <link rel="icon" type="image/png" href="favicon.png">
   <link rel="apple-touch-icon" href="favicon.png">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work — Webature</title>
+<title>Work — Oedipa Agency</title>
   <!-- SEO -->
-  <meta name="description" content="Selected projects by Webature — web design, SEO, content and digital strategy for businesses.">
+  <meta name="description" content="Selected projects by Oedipa Agency — web design, SEO, content and digital strategy for businesses.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://webature.co.uk/work">
+  <link rel="canonical" href="https://oedipa.agency/work">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://webature.co.uk/work">
-  <meta property="og:title" content="Our Work — Webature">
-  <meta property="og:description" content="Selected projects by Webature — web design, SEO, content and digital strategy for businesses.">
-  <meta property="og:image" content="https://webature.co.uk/og-image.jpg">
-  <meta property="og:site_name" content="Webature">
+  <meta property="og:url" content="https://oedipa.agency/work">
+  <meta property="og:title" content="Our Work — Oedipa Agency">
+  <meta property="og:description" content="Selected projects by Oedipa Agency — web design, SEO, content and digital strategy for businesses.">
+  <meta property="og:image" content="https://oedipa.agency/og-image.jpg">
+  <meta property="og:site_name" content="Oedipa Agency">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Our Work — Webature">
-  <meta name="twitter:description" content="Selected projects by Webature — web design, SEO, content and digital strategy for businesses.">
-  <meta name="twitter:image" content="https://webature.co.uk/og-image.jpg">
+  <meta name="twitter:title" content="Our Work — Oedipa Agency">
+  <meta name="twitter:description" content="Selected projects by Oedipa Agency — web design, SEO, content and digital strategy for businesses.">
+  <meta name="twitter:image" content="https://oedipa.agency/og-image.jpg">
 
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="shared.css">
@@ -132,7 +132,7 @@ a.avail-badge--link:hover { background:rgba(255,255,255,0.09); border-color:rgba
 <body>
 <div id="cur"></div>
 <nav>
-  <a href="/" class="logo"><img src="webature-logo.png" alt="Webature"></a>
+  <a href="/" class="logo"><img src="oedipa-logo.png" alt="Oedipa Agency"></a>
   <ul class="nav-links">
     <li><a href="/work" class="active">Work</a></li>
     <li class="nav-has-dropdown">
@@ -159,7 +159,7 @@ a.avail-badge--link:hover { background:rgba(255,255,255,0.09); border-color:rgba
   <a href="/contact" class="mob-drawer-link">Contact</a>
   <div class="mob-drawer-bottom"><button class="theme-toggle" aria-label="Toggle theme"><span class="theme-toggle-icon">🌙</span></button>
     <a href="/contact" class="mob-drawer-badge" style="text-decoration:none;"><span class="avail-dot"></span>Available For Work</a>
-    <a href="mailto:contact@webature.co.uk" class="mob-drawer-contact" style="font-size:0.8rem;color:var(--text-muted);text-decoration:none;">contact@webature.co.uk</a>
+    <a href="mailto:contact@oedipa.agency" class="mob-drawer-contact" style="font-size:0.8rem;color:var(--text-muted);text-decoration:none;">contact@oedipa.agency</a>
   </div>
 </div>
 
@@ -190,15 +190,15 @@ a.avail-badge--link:hover { background:rgba(255,255,255,0.09); border-color:rgba
 <footer>
   <div class="footer-inner">
     <div class="footer-top">
-      <a href="/" class="footer-logo"><img src="webature-logo.png" alt="Webature"></a>
-      <a href="mailto:contact@webature.co.uk" class="footer-email">contact@webature.co.uk</a>
+      <a href="/" class="footer-logo"><img src="oedipa-logo.png" alt="Oedipa Agency"></a>
+      <a href="mailto:contact@oedipa.agency" class="footer-email">contact@oedipa.agency</a>
       <div class="footer-social">
-        <a href="https://instagram.com/webature" target="_blank">Instagram</a>
-        <a href="https://linkedin.com/company/webature" target="_blank">LinkedIn</a>
+        <a href="https://instagram.com/Oedipa Agency" target="_blank">Instagram</a>
+        <a href="https://linkedin.com/company/Oedipa Agency" target="_blank">LinkedIn</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <span class="footer-copy">© 2026 Webature</span>
+      <span class="footer-copy">© 2026 Oedipa Agency</span>
       <div class="footer-legal">
         <a href="/terms">Terms &amp; Conditions</a>
         <a href="/privacy">Privacy Policy</a>
@@ -215,7 +215,7 @@ const defaultProjects=[
   {id:'d2',client:'Kommersant',subtitle:'Telegram Growth (65k → 240k)',desc:'Grew a major media brand\'s Telegram channel by 266% — from 65,000 to 240,000 subscribers — through a combination of content strategy and targeted paid advertising.',category:'Social Media Marketing',tags:['Social Media Marketing','Campaign Development'],year:'2024',images:['Images/kommersant_thumbnail.jpg'],image:'Images/kommersant_thumbnail.jpg',link:'case-study-kommersant.html'},
   {id:'d4',client:'Sputnik1985',subtitle:'New Collection Lookbook',desc:'Lookbook production for Sputnik1985\'s new collection launch — concept through to final deliverables, built for editorial, digital, and social use.',category:'Campaign Development',tags:['Campaign Development','Production'],year:'2025',images:['Images/sputnik1985_thumbnail.jpg'],image:'Images/sputnik1985_thumbnail.jpg',link:'case-study-sputnik1985.html'},
 ];
-function getProjects(){return[...defaultProjects,...JSON.parse(localStorage.getItem('webature_projects')||'[]')];}
+function getProjects(){return[...defaultProjects,...JSON.parse(localStorage.getItem('Oedipa Agency_projects')||'[]')];}
 function renderProjects(filter){
   const list=document.getElementById('projectList');
   const projects=getProjects().filter(p=>filter==='all'||p.tags.includes(filter)||p.category===filter);
